@@ -1,13 +1,26 @@
-html {
-    background: #f1f4f7;
+html, body {
+    background: #f1f4f7 !important;
 }
 .form-box {
     width: 100%;
-    padding: 20px;
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
-    margin: 20px;
+    margin: 20px 0;
+}
+.box-header {
+    background: #f5fafe;
+    border-radius: 10px 10px 0 0;
+    border-bottom: solid 1px #e0e5eb;
+    color: #0076df;
+    padding: 35px 0 27px 0;
+}
+.box-header h2 {
+    font-size: 18px;
+    margin: 10px 0 0 0;
+}
+.box-body {
+    padding: 20px;
 }
 
 

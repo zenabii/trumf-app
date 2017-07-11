@@ -1,7 +1,7 @@
 $(function() {
     $('#to-registration').on('click', function() {
-        $('.splash').hide();
-        $('.registration').show();
+        $('.splash').slideUp();
+        $('.registration').slideDown();
     });
 });
 
