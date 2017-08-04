@@ -39,23 +39,21 @@
     </head>
     <body>
         <div class="container-fluid">
-                <div class="box-header">
-                    <div class="splash">
-                        <div class="row"> 
-                            <div class="text-center">
-                                <div class="col-xs-6 text-center">
-                                    <img src="img/trumf.png">
-                                </div>
-                                <div class="col-xs-6 text-center">
-                                    <img src="img/esso.png">
-                                </div>
+                <div class="box-header splash">
+                    <div class="row"> 
+                        <div class="text-center">
+                            <div class="col-xs-6 text-center">
+                                <img src="img/trumf.png">
+                            </div>
+                            <div class="col-xs-6 text-center">
+                                <img src="img/esso.png">
+                            </div>
 
-                                <div class="col-xs-3"></div><div class="col-xs-6 text-center">
-                                    <p><h1>Hamburger burgdoggen chuck corned beef biltong ham hock filet mignon jerky pancetta t-bone brisket pastrami beef ribs. Filet mignon hamburger capicola landjaeger pork belly, corned beef pastrami t-bone. Drumstick ham bacon tri-tip swine. Kielbasa jerky pig boudin shank turkey.</p>
-                                </div><div class="col-xs-3"></div>
-                                <div class="col-xs-12">
-                                    <a href="#" id="to-registration"><div class="button2">Registrer deg her</div></a>
-                                </div>
+                            <div class="col-xs-3"></div><div class="col-xs-6 text-center">
+                                <p><h1>Hamburger burgdoggen chuck corned beef biltong ham hock filet mignon jerky pancetta t-bone brisket pastrami beef ribs. Filet mignon hamburger capicola landjaeger pork belly, corned beef pastrami t-bone. Drumstick ham bacon tri-tip swine. Kielbasa jerky pig boudin shank turkey.</p>
+                            </div><div class="col-xs-3"></div>
+                            <div class="col-xs-12">
+                                <a href="#" id="to-registration"><div class="button2">Registrer deg her</div></a>
                             </div>
                         </div>
                     </div>
@@ -64,19 +62,20 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="form-box"> 
-                            <div class="box-header text-center">
+                            <div class="box-header">
                                 <div class="col-xs-6 text-center">
                                     <img src="img/trumf.png">
                                 </div>
                                 <div class="col-xs-6 text-center">
                                     <img src="img/esso.png">
                                 </div>
-                                <h2>Fyll ut skjemaet og bli Trumf-medlem!</h2>
+                                <div class="col-xs-12">
+                                    <h2 class="text-center">Fyll ut skjemaet og bli Trumf-medlem!</h2>
+                                </div>
                             </div>
                             <div class="box-body">
-                                <p>Som Trumf-medlem sparer du bonus på din medlemskonto når du handler hos Trumf sine partnere. Du får tilgang til din kjøpshistorikk og du kan administrere din profil og dine samtykker ved å logge deg inn på trumf.no.</p>
-
-                                <p>Du finner mer informasjon om Trumf og vår behandling av personopplysninger her.</p>
+                                <p class="darker text-center">Som Trumf-medlem sparer du bonus på din medlemskonto når du handler hos Trumf sine partnere. Du får tilgang til din kjøpshistorikk og du kan administrere din profil og dine samtykker ved å logge deg inn på trumf.no.</p>
+                                <p class="darker text-center">Du finner mer informasjon om Trumf og vår behandling av personopplysninger her.</p>
                                 <form>
                                     <div class="row">
                                         <div class="col-xs-6">
@@ -97,31 +96,64 @@
                                         </div>
                                         <div class="col-xs-4">
                                             <label>Poststed</label>
-                                            <input class="form-control" type="text">
+                                            <input class="form-control" type="text" disabled="disabled">
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <label>Fødselsdato</label>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <select class="form-control text-center" type="number" placeholder="Dag">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <input class="form-control text-center" type="number" placeholder="Måned">
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <input class="form-control text-center" type="number" placeholder="År">
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="col-xs-6">
                                             <label>E-postadresse</label>
-                                            <input class="form-control" type="text">
+                                            <input class="form-control" type="text" placeholder="mail@eksempel.no">
                                         </div>
                                         <div class="col-xs-6">
-                                            <label>Mobiltelefon</label>
-                                            <div class="clearfix"></div>
-                                            <span>+47</span><input class="form-control " type="text">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <label>Mobiltelefon</label>
+                                                </div>
+                                                <div class="col-xs-1">
+                                                    <label class="num-prefix">+47</label>
+                                                </div>
+                                                <div class="col-xs-11">
+                                                    <input class="form-control " type="text" placeholder="8 siffer">
+                                                </div>
+                                            </div>
                                         </div>
+                                    </div>
+                                    <div class="row row-stripe">
                                         <div class="col-xs-6">
-                                            <label>Fødselsdato</label>
-                                            <input class="form-control" type="date">
-                                        </div>
-                                        <div class="col-xs-3"></div><div class="col-xs-6">
                                             <h3>Spar bonus automatisk med bankkortet ditt.</h3>
-                                            <label>Du kan kun registrere et kontonummer der ditt navn står som eier av kontonummeret.</label>
-                                            <span>Kontonummer</span><input class="form-control" type="text">
-                                        </div><div class="col-xs-3"></div>
-                                        <div class="col-xs-3"></div><div class="col-xs-6">
+                                            <p>Du kan kun registrere et kontonummer der ditt navn står som eier av kontonummeret.</p>
+                                            <label>Kontonummer</label>
+                                            <input class="form-control" type="number" placeholder="11 siffer">
+                                        </div>
+                                        <div class="col-xs-6">
                                             <h3>Har du Trumf-kort?</h3>
-                                            <label>Registrer Trumf-kortet du har ved å taste inn kundenummeret som står på baksiden av kortet</label>
-                                            <span>Kundenummer</span><input class="form-control" type="text">
-                                        </div><div class="col-xs-3"></div>
+                                            <p>Registrer Trumf-kortet du har ved å taste inn kundenummeret som står på baksiden av kortet</p>
+                                            <label>Kundenummer</label>
+                                            <input class="form-control" type="number" placeholder="9 siffer">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <p>Trumf kan lagre opplysninger som jeg oppgir og opplysninger fra mine kjøp og medlemsaktiviteter, for å gi meg bonus og tilbud, informasjon og tjenester tilpasset meg. Opplysningene kan deles med Trumf-partnere. Dersom jeg inngår et felles medlemskap har øvrige medlemmer innsyn i mine personopplysninger. Jeg er en privatperson som er over 16 år.</p>
+                                        </div>
                                     </div>
                                 </form>
                                 <div class="button" class="col-xs-6"> Bli Trumf-medlem </div><div class="col-xs-3"></div>
