@@ -92,11 +92,11 @@
                                         </div>
                                         <div class="col-xs-2">
                                             <label>Postnummer</label>
-                                            <input class="form-control" type="number">
+                                            <input class="form-control" id="postcode" type="number">
                                         </div>
                                         <div class="col-xs-4">
                                             <label>Poststed</label>
-                                            <input class="form-control" type="text" disabled="disabled">
+                                            <input class="form-control" id="city" type="text" disabled="disabled">
                                         </div>
                                         <div class="col-xs-6">
                                             <div class="row">
@@ -104,17 +104,31 @@
                                                     <label>Fødselsdato</label>
                                                 </div>
                                                 <div class="col-xs-4">
-                                                    <select class="form-control text-center" type="number" placeholder="Dag">
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
+                                                    <select class="form-control text-center" id="day" type="number">
+                                                        <option disabled selected>Dag</option>
                                                     </select>
                                                 </div>
                                                 <div class="col-xs-4">
-                                                    <input class="form-control text-center" type="number" placeholder="Måned">
+                                                    <select class="form-control text-center" id="month" type="number">
+                                                        <option disabled selected>Måned</option>
+                                                        <option value="1">Januar</option>
+                                                        <option value="2">Februar</option>
+                                                        <option value="3">Mars</option>
+                                                        <option value="4">April</option>
+                                                        <option value="5">Mai</option>
+                                                        <option value="6">Juni</option>
+                                                        <option value="7">Juli</option>
+                                                        <option value="8">August</option>
+                                                        <option value="9">September</option>
+                                                        <option value="10">Oktober</option>
+                                                        <option value="11">November</option>
+                                                        <option value="12">Desember</option>
+                                                    </select>
                                                 </div>
                                                 <div class="col-xs-4">
-                                                    <input class="form-control text-center" type="number" placeholder="År">
+                                                    <select class="form-control text-center" id="year" type="number">
+                                                        <option disabled selected>År</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>

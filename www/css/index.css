@@ -58,7 +58,7 @@ label {
     font-family: "BrandonTextWeb-Regular",Arial,Helvetica,sans-serif;
     color: #4d627c;
 }
-input.form-control {
+input.form-control, select.form-control {
     box-shadow: none;
     font-size: 18px;
     padding: 10px;
@@ -66,9 +66,12 @@ input.form-control {
     border-radius: 3px;
     color: #486589;
     font-family: "BrandonTextWeb-Regular",Arial,Helvetica,sans-serif;
-    height: initial;
+    height: 47px;
     line-height: initial !important;
     margin-bottom: 10px;
+}
+select.form-control option:disabled {
+    color: #999ba9;
 }
 .num-prefix {
     line-height: 47px;
