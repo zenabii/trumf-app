@@ -1,5 +1,12 @@
 html, body {
     background: #f1f4f7 !important;
+    font-family: "BrandonTextWeb-Regular",Arial,Helvetica,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal !important;
+    font-style: normal !important;
 }
 .form-box {
     width: 100%;
@@ -15,25 +22,71 @@ html, body {
     border-bottom: solid 1px #e0e5eb;
     color: #0076df;
     padding: 35px 0 27px 0;
+    min-height: 300px;
 }
-.box-header h2 {
-    font-size: 28px;
-    margin: 10px 0 0 0;
-    padding-top: 70px;
-    padding-bottom: 30px;
-}
-
 .box-header h1 {
     font-size: 18px;
     margin: 10px 0 0 0;
     padding-top: 50px;
 }
-
-.box-body {
-    padding: 20px;
+.box-header h2 {
+    font-size: 28px;
+    font-family: "BrandonTextWeb-Medium",Arial,Helvetica,sans-serif;
+    margin-top: 50px;
 }
 
+.box-body h3 {
+    color: #486589;
+    font-size: 1.17em !important;
+    margin-top: 20px;
+}
 
+.box-body {
+    padding: 15px;
+}
+p.darker {
+    color: #002045 !important;
+}
+.box-body p {
+    line-height: 1.5;
+    font-size: 15px;
+    font-family: "BrandonTextWeb-Regular",Arial,Helvetica,sans-serif;
+    color: #486589;
+}
+label {
+    font-size: 16px;
+    font-family: "BrandonTextWeb-Regular",Arial,Helvetica,sans-serif;
+    color: #4d627c;
+}
+input.form-control, select.form-control {
+    box-shadow: none;
+    font-size: 18px;
+    padding: 10px;
+    border: solid 1px rgba(0,37,88,.2);
+    border-radius: 3px;
+    color: #486589;
+    font-family: "BrandonTextWeb-Regular",Arial,Helvetica,sans-serif;
+    height: 47px;
+    line-height: initial !important;
+    margin-bottom: 10px;
+}
+select.form-control option:disabled {
+    color: #999ba9;
+}
+.num-prefix {
+    line-height: 47px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.row-stripe {
+    background-color: #f9fcfe;
+    border-top: solid 1px #e0e5eb;
+    border-bottom: solid 1px #e0e5eb;
+    margin-top: 10px;
+}
+.row-stripe input.form-control {
+    margin-bottom: 20px;
+}
 
 .registration {
     display: none;
@@ -69,15 +122,45 @@ html, body {
     font-size: 28px
 }
 
-
-p {
-    text-align: center;
+@font-face {
+	font-family:"BrandonTextWeb-Regular";
+	src:url("/fonts/BrandonTextWeb-Regular-3fe2f1bcebfdd934ee6125d6a4b37878b04e6e69.eot");
+	src:url("/fonts/BrandonTextWeb-Regular-3fe2f1bcebfdd934ee6125d6a4b37878b04e6e69.eot?#iefix") format("embedded-opentype"),url("/fonts/BrandonTextWeb-Regular-76469cd2243b9b1e8db4ec6df7c304d422e95096.woff2") format("woff2"),url("/fonts/BrandonTextWeb-Regular-bb784a6a2f2e2cf92d4ced8e9bb972f63d6d7ca1.woff") format("woff"),url("/fonts/BrandonTextWeb-Regular-90ddf9f565554f2e65db2946635a89908f623411.ttf") format("truetype");
+	font-weight:normal;
+	font-style:normal;
 }
-
-h3 {
-    font-size: 22px !important;
+@font-face {
+	font-family:"BrandonTextWeb-RegularItalic";
+	src:url("/fonts/BrandonTextWeb-RegularItalic-43f6e0b7f0ea260fff4dfcb5e1a0839cc8af827f.eot");
+	src:url("/fonts/BrandonTextWeb-RegularItalic-43f6e0b7f0ea260fff4dfcb5e1a0839cc8af827f.eot?#iefix") format("embedded-opentype"),url("/fonts/BrandonTextWeb-RegularItalic-b348e5e5bf5e0d21346bbf7f28b9953873af5133.woff2") format("woff2"),url("/fonts/BrandonTextWeb-RegularItalic-a36f3b2a409acb4d34fe2178180f2cefe057afa8.woff") format("woff"),url("/fonts/BrandonTextWeb-RegularItalic-2cf4f1ee026555f3c076ccc8c2ba79f6a0a06b3b.ttf") format("truetype");
+	font-weight:normal;
+	font-style:normal;
 }
-
-img {
-    padding-bottom: 60px;
+@font-face {
+	font-family:"BrandonTextWeb-Medium";
+	src:url("/fonts/BrandonTextWeb-Medium-4f7420b6b648fa6d91589b17bb045e52cdea2c0f.eot");
+	src:url("/fonts/BrandonTextWeb-Medium-4f7420b6b648fa6d91589b17bb045e52cdea2c0f.eot?#iefix") format("embedded-opentype"),url("/fonts/BrandonTextWeb-Medium-cfe2d8763f93b795d8e28b1e04c243ab7fb4c870.woff2") format("woff2"),url("/fonts/BrandonTextWeb-Medium-6aa7fa7bce97cd6a67289e8fbe4c27f25d533111.woff") format("woff"),url("/fonts/BrandonTextWeb-Medium-ff190df1fd88b4d10a5b91a4798ec654127a6525.ttf") format("truetype");
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:"BrandonTextWeb-MediumItalic";
+	src:url("/fonts/BrandonTextWeb-MediumItalic-75b7e0c887fab4edd3369d80467413f3a0835798.eot");
+	src:url("/fonts/BrandonTextWeb-MediumItalic-75b7e0c887fab4edd3369d80467413f3a0835798.eot?#iefix") format("embedded-opentype"),url("/fonts/BrandonTextWeb-MediumItalic-5d90a51530c3a21c8631433a785eb699c240764c.woff2") format("woff2"),url("/fonts/BrandonTextWeb-MediumItalic-007a0b8cd6c2b5be9457f637d470bcd935fcc420.woff") format("woff"),url("/fonts/BrandonTextWeb-MediumItalic-544f6f8990830b0d39714699c253f575a11ba038.ttf") format("truetype");
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:"BrandonTextWeb-Bold";
+	src:url("/fonts/BrandonTextWeb-Bold-09af34522c8353504ab13732cbc3181de76b3eae.eot");
+	src:url("/fonts/BrandonTextWeb-Bold-09af34522c8353504ab13732cbc3181de76b3eae.eot?#iefix") format("embedded-opentype"),url("/fonts/BrandonTextWeb-Bold-460ffb091a04f4ea0295f7afe8e14a61dbe2a7f3.woff2") format("woff2"),url("/fonts/BrandonTextWeb-Bold-b9e57f55b1b2357ce9d6c2a86c40efb0217cb718.woff") format("woff"),url("/fonts/BrandonTextWeb-Bold-cc190738f562daf71da095c476fd297d85abb0e6.ttf") format("truetype");
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:"BrandonTextWeb-BoldItalic";
+	src:url("/fonts/BrandonTextWeb-BoldItalic-b86d285c9b494430f3e1ef3f8d9c46f9e35bfda6.eot");
+	src:url("/fonts/BrandonTextWeb-BoldItalic-b86d285c9b494430f3e1ef3f8d9c46f9e35bfda6.eot?#iefix") format("embedded-opentype"),url("/fonts/BrandonTextWeb-BoldItalic-5eae409b58b2667989991507c674cf08da3a75f6.woff2") format("woff2"),url("/fonts/BrandonTextWeb-BoldItalic-29158583a90e5e1bad58c8496489720ef714743d.woff") format("woff"),url("/fonts/BrandonTextWeb-BoldItalic-8d660d9f1f24fa816b3640d33acf2db57ccc12dc.ttf") format("truetype");
+	font-weight:normal;
+	font-style:normal;
 }
