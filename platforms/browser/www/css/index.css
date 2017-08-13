@@ -8,6 +8,16 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal !important;
     font-style: normal !important;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.splash {
+    margin: 0 -15px;
+}
+
 .form-box {
     width: 100%;
     border-radius: 10px;
