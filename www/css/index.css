@@ -132,6 +132,51 @@ select.form-control option:disabled {
     font-size: 28px
 }
 
+.mdl-dialog {
+    width: 80% !important;
+}
+#confirm-terms {
+    background-color: #0076df !important;
+    color: #fff !important;
+    opacity: .6 !important;
+}
+#main-submit {
+    line-height: 1.2;
+    position: relative;
+    padding: 10px 30px;
+    min-height: 45px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 24px;
+    border: none;
+    background-color: #0076df;
+    color: #fff;
+    font-family: "BrandonTextWeb-Medium",Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    opacity: .6;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+    cursor: pointer;
+}
+#main-submit:before {
+    content: "";
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-image: url(data:image/svg+xml,%3Csvg%20width%3D%2282%22%20height%3D%2282%22%20viewBox%?2%209.921l-.002-9.92z%22%20fill%3D%22%23FFF%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+    background-position: center center;
+    background-size: 40px;
+    background-repeat: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
 @font-face {
 	font-family:"BrandonTextWeb-Regular";
 	src:url("/fonts/BrandonTextWeb-Regular-3fe2f1bcebfdd934ee6125d6a4b37878b04e6e69.eot");

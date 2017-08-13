@@ -35,6 +35,8 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/material.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <title>Trumf</title>
     </head>
     <body>
@@ -152,9 +154,10 @@
                                         <div class="col-xs-12">
                                             <p>Trumf kan lagre opplysninger som jeg oppgir og opplysninger fra mine kjøp og medlemsaktiviteter, for å gi meg bonus og tilbud, informasjon og tjenester tilpasset meg. Opplysningene kan deles med Trumf-partnere. Dersom jeg inngår et felles medlemskap har øvrige medlemmer innsyn i mine personopplysninger. Jeg er en privatperson som er over 16 år.</p>
                                         </div>
+                                        <div class="col-xs-12">
+                                            <button id="main-submit" type="submit">Bli Trumf-medlem</button>
+                                        </div>
                                     </div>
-                                    <div class="col-xs-3"></div><button type="submit">Send</button>
-                                    <div class="button col-xs-6"> Bli Trumf-medlem </div><div class="col-xs-3"></div>
                                 </form>
                             </div>
                         </div>
@@ -162,7 +165,27 @@
                 </div>
             </div>
         </div>
+        <dialog class="mdl-dialog">
+            <h4 class="mdl-dialog__title">Vilkår</h4>
+            <div class="mdl-dialog__content">
+                <p>Trumf behandler personopplysninger i samsvar med personopplysningsloven. Ved å si ja til å bli Trumf-medlem aksepterer jeg at Trumf kan:</p>
+                <ul>
+                    <li>Bruke mine personopplysninger, og kjøpshistorikk (for eksempel kassekvittering, betaling av eventuelle løpende tjenester og bruk av betalingskort med Trumf bonus) for å beregne min bonus og i administrasjon av medlemskapet. Dersom jeg inngår et felles medlemskap deles mine personopplysninger med øvrige medlemmer.</li>
+                    <li>Sammenstille mine personopplysninger med andre virksomheters personopplysninger for å oppnå mest mulig korrekte kundedata. Eksempler på dette er adresseoppdateringer.</li>
+                    <li>Bruke mine personopplysninger, kjøpshistorikk og kampanjerespons som grunnlag for tilpasset tilbud og kommunikasjon. Dette gjelder også for Trumfs partnere. Jeg kan si nei til tilpasset tilbud og kommunikasjon i valgene på min side.&nbsp;</li>
+                    <li>Benytte og sammenstille personopplysninger til formidling av tilbud og annen informasjon gjennom sosiale medier og andre digitale kommunikasjonsnettverk. Eksempler på dette kan være Facebook og Schibsted. Jeg kan si nei til dette i valgene på Min side.</li>
+                    <li>Kontakte meg via SMS, e-post, vanlig post eller andre alternativer ut fra valgene på Min side. Dette gjelder også for Trumfs partnere.</li>
+                    <li>Anonymisere opplysninger og bruke opplysninger som ikke kan knyttes til meg til andre formål.</li>
+                </ul>
+            </div>
+            <div class="mdl-dialog__actions">
+                <button type="button" id="close-terms" class="mdl-button">Avbryt</button>
+                <button type="button" id="confirm-terms" class="mdl-button mdl-js-button mdl-button--raised">Jeg godtar</button>
+            </div>
+        </dialog>
         <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script src="js/material.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </body>
