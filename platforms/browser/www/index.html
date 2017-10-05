@@ -41,9 +41,9 @@
     </head>
     <body>
         <div class="container-fluid">
-                <div id="to-registration" class="splash">
-                   <img src="img/forsideutkast.png">
-                </div>
+            <div id="to-registration" class="splash">
+                <img src="img/forsideutkast.png">
+            </div>
             <div class="registration">
                 <div class="row">
                     <div class="col-xs-12">
@@ -60,6 +60,7 @@
                                 </div>
                             </div>
                             <div class="box-body">
+                                <div class="warning"></div>
                                 <p class="darker text-center">Som Trumf-medlem sparer du bonus på din medlemskonto når du handler hos Trumf sine partnere. Du får tilgang til din kjøpshistorikk og du kan administrere din profil og dine samtykker ved å logge deg inn på trumf.no.</p>
                                 <p class="darker text-center">Du finner mer informasjon om Trumf og vår behandling av personopplysninger her.</p>
                                 <form>
@@ -141,13 +142,13 @@
                                             <h3>Spar bonus automatisk med bankkortet ditt.</h3>
                                             <p>Du kan kun registrere et kontonummer der ditt navn står som eier av kontonummeret.</p>
                                             <label>Kontonummer</label>
-                                            <input class="form-control" type="number" placeholder="11 siffer">
+                                            <input class="form-control" type="number" id="Bankkort" name="Bankkort" placeholder="11 siffer">
                                         </div>
                                         <div class="col-xs-6">
                                             <h3>Har du Trumf-kort?</h3>
                                             <p>Registrer Trumf-kortet du har ved å taste inn kundenummeret som står på baksiden av kortet</p>
                                             <label>Kundenummer</label>
-                                            <input class="form-control" type="number" placeholder="9 siffer">
+                                            <input class="form-control" type="number" id="Trumfkort" name="Trumfkort" placeholder="9 siffer">
                                         </div>
                                     </div>
                                     <div class="row">
@@ -164,10 +165,32 @@
                     </div>
                 </div>
             </div>
+
+            <div class="completed">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-box"> 
+                            <div class="box-header">
+                                <div class="col-xs-6 text-center">
+                                    <img src="img/trumf.png">
+                                </div>
+                                <div class="col-xs-6 text-center">
+                                    <img src="img/esso.png">
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <p>Takk!</p>
+                                <a href="#" class="btn btn-primary" id="back-complete">Lukk</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <dialog class="mdl-dialog">
             <h4 class="mdl-dialog__title">Vilkår</h4>
-            <div class="mdl-dialog__content">
+            <div class="mdl-dialog__content" id="terms-content">
                 <p>Trumf behandler personopplysninger i samsvar med personopplysningsloven. Ved å si ja til å bli Trumf-medlem aksepterer jeg at Trumf kan:</p>
                 <ul>
                     <li>Bruke mine personopplysninger, og kjøpshistorikk (for eksempel kassekvittering, betaling av eventuelle løpende tjenester og bruk av betalingskort med Trumf bonus) for å beregne min bonus og i administrasjon av medlemskapet. Dersom jeg inngår et felles medlemskap deles mine personopplysninger med øvrige medlemmer.</li>

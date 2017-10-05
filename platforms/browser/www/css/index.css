@@ -98,10 +98,33 @@ select.form-control option:disabled {
     margin-bottom: 20px;
 }
 
-.registration {
+.registration, .completed {
     display: none;
 }
 
+.warning {
+    color: #e2492f;
+    display: none;
+    word-wrap: break-word;
+    background-color: #fafafa;
+    box-shadow: inset 0 2px 6px -4px rgba(0,0,0,.47);
+    -webkit-animation: appear 1s ease-in-out;
+    animation: appear 1s ease-in-out;
+    overflow: hidden;
+    max-height: 500px;
+    padding: 20px;
+    text-align: center;
+    margin: -15px -15px 15px;
+}
+.warning-message {
+    background-image: url('/img/warning.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    display: inline-block;
+    padding-left: 40px;
+    min-height: 32px;
+    line-height: 32px;
+}
 
 .button {
     background-color: #0076df;
@@ -168,7 +191,7 @@ select.form-control option:disabled {
     width: 46px;
     height: 46px;
     border-radius: 50%;
-    background-image: url(data:image/svg+xml,%3Csvg%20width%3D%2282%22%20height%3D%2282%22%20viewBox%?2%209.921l-.002-9.92z%22%20fill%3D%22%23FFF%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+    background-image: url('/img/trumficon.svg');
     background-position: center center;
     background-size: 40px;
     background-repeat: none;

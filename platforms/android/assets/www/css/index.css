@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -98,10 +98,33 @@ select.form-control option:disabled {
     margin-bottom: 20px;
 }
 
-.registration {
+.registration, .completed {
     display: none;
 }
 
+.warning {
+    color: #e2492f;
+    display: none;
+    word-wrap: break-word;
+    background-color: #fafafa;
+    box-shadow: inset 0 2px 6px -4px rgba(0,0,0,.47);
+    -webkit-animation: appear 1s ease-in-out;
+    animation: appear 1s ease-in-out;
+    overflow: hidden;
+    max-height: 500px;
+    padding: 20px;
+    text-align: center;
+    margin: -15px -15px 15px;
+}
+.warning-message {
+    background-image: url('/img/warning.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    display: inline-block;
+    padding-left: 40px;
+    min-height: 32px;
+    line-height: 32px;
+}
 
 .button {
     background-color: #0076df;
@@ -130,6 +153,51 @@ select.form-control option:disabled {
     text-decoration: none;
     display: inline-block;
     font-size: 28px
+}
+
+.mdl-dialog {
+    width: 80% !important;
+}
+#confirm-terms {
+    background-color: #0076df !important;
+    color: #fff !important;
+    opacity: .6 !important;
+}
+#main-submit {
+    line-height: 1.2;
+    position: relative;
+    padding: 10px 30px;
+    min-height: 45px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 24px;
+    border: none;
+    background-color: #0076df;
+    color: #fff;
+    font-family: "BrandonTextWeb-Medium",Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    opacity: .6;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+    cursor: pointer;
+}
+#main-submit:before {
+    content: "";
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-image: url('/img/trumficon.svg');
+    background-position: center center;
+    background-size: 40px;
+    background-repeat: none;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 @font-face {
