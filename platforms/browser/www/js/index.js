@@ -21,6 +21,12 @@ $(function() {
         `);
     }
 
+    // Get terms
+    $.get('https://preprod.service-dk.norgesgruppen.no/trumf/betingelser/trumf', function(data) {
+        $('#termsModal .modal-body').html(data);
+        $('#termsModal .modal-body a').remove();
+    });
+
     // Postal code
     $('#PostalCode').on('keyup', function() {
         var reqToken = getToken();
@@ -48,19 +54,9 @@ $(function() {
         showTerms();
     });
 
-    // Modal - terms
-    dialog = document.querySelector('dialog');
-    if (!dialog.showModal) {
-      dialogPolyfill.registerDialog(dialog);
-    }
-    $('#confirm-terms').on('click', function(e) {
+    $('#continue').on('click', function(e) {
         e.preventDefault();
-        dialog.close();
         submitForm();
-    });
-    $('#close-terms').on('click', function(e) {
-        e.preventDefault();
-        dialog.close();
     });
     $('#back-complete').on('click', function(e) {
         e.preventDefault();
@@ -76,11 +72,13 @@ function clearForm() {
     $('.warning').hide();
     $('.splash').slideDown();
     $('.registration').slideUp();
+    $('.terms').slideUp();
     $('.completed').slideUp();
 }
 
 function showTerms() {
-    dialog.showModal();
+    $('.registration').slideUp();
+    $('.terms').slideDown();
 }
 
 function submitForm() {
