@@ -4,6 +4,8 @@ var formArr = {}
 
 // Document ready
 $(function() {
+    // window.location.href = 'https://trumf-esso.s3-eu-west-1.amazonaws.com/index.html';
+    // window.open('https://trumf-esso.s3-eu-west-1.amazonaws.com/index.html', '_self');
     $('#to-registration').on('click', function() {
         $('.splash').slideUp();
         $('.registration').slideDown();
@@ -58,7 +60,7 @@ $(function() {
         e.preventDefault();
         submitForm();
     });
-    $('#back-complete').on('click', function(e) {
+    $('.clear-form').on('click', function(e) {
         e.preventDefault();
         clearForm();
     });
@@ -79,6 +81,11 @@ function clearForm() {
 function showTerms() {
     $('.registration').slideUp();
     $('.terms').slideDown();
+}
+
+function stepBack() {
+    $('.registration').slideDown();
+    $('.terms').slideUp();
 }
 
 function submitForm() {
@@ -118,17 +125,17 @@ function submitForm() {
         method: 'POST',
         url: 'https://preprod.service-dk.norgesgruppen.no/trumf',
         data: JSON.stringify(postData),
-        dataType: 'json',
         headers: {
             'Authorization': 'Bearer ' + reqToken,
             'Content-Type': 'application/json;charset=UTF-8'
         }
     }).done(function(data) {
-        $('.registration').slideUp();
+        $('.terms').slideUp();
         $('.completed').slideDown();
     }).fail(function(data) {
+        stepBack();
         var msg = data.responseJSON.message;
-        if (msg = 'Requesten er feilformatert') {
+        if (msg == 'Requesten er feilformatert') {
             msg = 'En feil har oppstått. Vennligst kontroller skjemaet og prøv igjen.'
         }
         $('.warning').html('<div class="warning-message">'+msg+'</div>');
