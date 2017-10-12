@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <title>Trumf</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div id="to-registration" class="splash">
+                <img src="img/forsideutkast.png">
+            </div>
+            <div class="registration">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-box"> 
+                            <div class="box-header">
+                                <div class="col-xs-6 text-center">
+                                    <img src="img/trumf.png">
+                                </div>
+                                <div class="col-xs-6 text-center">
+                                    <img src="img/esso.png">
+                                </div>
+                                <div class="col-xs-12">
+                                    <h2 class="text-center">Fyll ut skjemaet og bli Trumf-medlem!</h2>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <div class="warning"></div>
+                                <p class="darker text-center">Som Trumf-medlem sparer du bonus på din medlemskonto når du handler hos Trumf sine partnere. Du får tilgang til din kjøpshistorikk og du kan administrere din profil og dine samtykker ved å logge deg inn på trumf.no.</p>
+                                <form novalidate>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <label class="control-label">Fornavn</label>
+                                            <input class="form-control" id="FirstName" name="FirstName" type="text">
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <label class="control-label">Etternavn</label>
+                                            <input class="form-control" id="LastName" name="LastName" type="text">
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <label>Gateadresse</label>
+                                            <input class="form-control" id="Address" name="Address" type="text">
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <label>Postnummer</label>
+                                            <input class="form-control" id="PostalCode" name="PostalCode" type="number">
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <label>Poststed</label>
+                                            <input class="form-control" id="City" name="City" type="text" disabled="disabled">
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <label>Fødselsdato</label>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <select class="form-control text-center" id="day" type="number">
+                                                        <option disabled selected>Dag</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <select class="form-control text-center" id="month" type="number">
+                                                        <option disabled selected>Måned</option>
+                                                        <option value="1">Januar</option>
+                                                        <option value="2">Februar</option>
+                                                        <option value="3">Mars</option>
+                                                        <option value="4">April</option>
+                                                        <option value="5">Mai</option>
+                                                        <option value="6">Juni</option>
+                                                        <option value="7">Juli</option>
+                                                        <option value="8">August</option>
+                                                        <option value="9">September</option>
+                                                        <option value="10">Oktober</option>
+                                                        <option value="11">November</option>
+                                                        <option value="12">Desember</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <select class="form-control text-center" id="year" type="number">
+                                                        <option disabled selected>År</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <label class="control-label">E-postadresse</label>
+                                            <input class="form-control" type="email" id="Email" name="Email" placeholder="mail@eksempel.no">
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <label>Mobiltelefon</label>
+                                                </div>
+                                                <div class="col-xs-1">
+                                                    <label class="num-prefix">+47</label>
+                                                </div>
+                                                <div class="col-xs-11">
+                                                    <input class="form-control " type="text" id="Mobile" name="Mobile" placeholder="8 siffer">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row row-stripe">
+                                        <div class="col-xs-6">
+                                            <h3>Spar bonus automatisk med bankkortet ditt.</h3>
+                                            <p>Du kan kun registrere et kontonummer der ditt navn står som eier av kontonummeret.</p>
+                                            <label class="control-label">Kontonummer</label>
+                                            <input class="form-control" type="number" id="Bankkort" name="Bankkort" placeholder="11 siffer">
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <h3>Har du Trumf-kort?</h3>
+                                            <p>Registrer Trumf-kortet du har ved å taste inn kundenummeret som står på baksiden av kortet</p>
+                                            <label>Kundenummer</label>
+                                            <input class="form-control" type="number" id="Trumfkort" name="Trumfkort" placeholder="9 siffer">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <button class="main-submit" id="main-submit" type="submit">Bli Trumf-medlem</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="terms">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-box"> 
+                            <div class="box-header">
+                                <div class="col-xs-6 text-center">
+                                    <img src="img/trumf.png">
+                                </div>
+                                <div class="col-xs-6 text-center">
+                                    <img src="img/esso.png">
+                                </div>
+                                <div class="col-xs-12">
+                                    <h2 class="text-center">Bekreft vilkår og bli Trumf-medlem!</h2>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <p>Ved å bli Trumf-medlem aksepterer du følgende:</p>
+                                <ul>
+                                    <li>Trumf kan bruke opplysningene om deg og dine kjøp (eksempelvis om varer, tjenester og bruk av betalingskort knyttet til Trumf) til å beregne bonus og administrere medlemskapet. Dersom du knytter medlemskapet ditt til flere medlemmer i et delt medlemskap, vil opplysninger om deg og dine kjøp deles med disse medlemmene.</li>
+                                    <li>Trumf kan sammenstille dine personopplysninger med andre virksomheters personopplysninger for å oppnå mest mulig korrekte kundedata. Et typisk eksempel er adresseoppdateringer.</li>
+                                    <li>Trumf og Trumfs partnere kan kontakte deg via SMS, e-post, vanlig post eller andre alternativer ut i fra valgene på min profil som innlogget på trumf.no.</li>
+                                    <li>Trumf anonymiserer opplysninger om deg og dine kjøp, og kan bruke dem til formål som ikke kan knyttes til deg personlig.</li>
+                                    <li>Øvrige <a href="#" data-toggle="modal" data-target="#termsModal">medlemsvilkår.</a></li>
+                                </ul>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" id="accept-checkbox"> Ja, jeg samtykker til vilkårene ovenfor og bekrefter at jeg er en privatperson over 16 år
+                                    </label>
+                                </div>
+                                <div class="text-center">
+                                    <button class="main-submit" id="continue" type="submit">Bli Trumf-medlem</button>
+                                    <a href="#" class="clear-form">Avbryt</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="completed">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-box"> 
+                            <div class="box-header">
+                                <div class="col-xs-6 text-center">
+                                    <img src="img/trumf.png">
+                                </div>
+                                <div class="col-xs-6 text-center">
+                                    <img src="img/esso.png">
+                                </div>
+                                <div class="col-xs-12">
+                                    <h2 class="text-center">Velkommen som Trumf-medlem!</h2>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <div class="text-center">
+                                    <p class="text-center">Takk for at du registrete deg!</p>
+                                    <a href="#" class="clear-form">Lukk</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="termsModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="termsModalLabel">Medlemsvilkår</h4>
+                    </div>
+                    <div class="modal-body"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Lukk</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
