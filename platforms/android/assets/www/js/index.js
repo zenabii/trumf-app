@@ -3,5 +3,5 @@ function onLoad() {
 }
 
 function onDeviceReady() {
-    window.open('https://trumf-esso.s3-eu-west-1.amazonaws.com/index.html', '_self');
+    window.open('http://trumfapp.involve.no/index.html', '_self');
 }
